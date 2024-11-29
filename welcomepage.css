@@ -1,0 +1,199 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+
+}
+
+nav {
+  background-color: #000000; /* Dark background */
+  padding: 10px 0; /* Padding to make the nav bar taller */
+  width: 100%;
+  position: relative;
+  right: 0;
+  top:0;
+ /* border: 2px solid #ffffff;*/
+}
+
+/* Style the links inside the nav bar */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center; /* Center the links */
+}
+
+nav ul li {
+  margin: 0 20px; /* Add some space between the links */
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: blink;
+  padding: 10px 20px;
+  font-size: 18px;
+  display: inline-block;
+  font-family: 'Kanit', sans-serif;
+  border: none;
+  padding: .8em 2.5em;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+
+
+/* Add hover effects */
+nav ul li a:hover {
+  background-color: #1c4ef1;
+  border-radius: 4px;
+  scale: 1.4;
+}
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column; /* Stack the links vertically on small screens */
+    align-items: center;
+  }
+
+  nav ul li {
+    margin: 10px 0; /* Adjust margin for vertical stacking */
+  }
+}
+
+
+
+
+.main{
+  height: 100vh;
+  width:100%;
+
+}
+.wrapper, .slide{
+ /* overflow: hidden;*/
+  width: 400px;
+  height: 400px;
+}
+
+.slide::before{
+  content: "";
+  position: absolute;
+  background-color: transparent; /* Make sure this is transparent */
+  height: 100%;
+  width: 100%;
+
+
+}
+
+.slide .img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+
+}
+
+
+.slide .image{
+  width: 200px;
+  height: 200px;
+  
+  object-fit: cover;
+  position:absolute;
+  top: -50px;
+  left: -10px;
+  border-radius: 50%;
+  
+  
+} 
+
+
+.slide .Slide1{
+  font-size: 50px;
+  font-family: 'Kanit', sans-serif;
+  position:absolute;
+  
+  color:rgb(0, 0, 0);
+  position: absolute;
+  top: 200px;
+  left: 50px;
+  
+}
+
+.Slide1 h2 {
+  font-size: 35px;  /* Adjust the size as needed */
+  font-family: "Afacad Flux", sans-serif;
+}
+
+.Slide1 .fidtec {
+  font-size: 35px;
+  color:#2b64eb;
+  font-weight: bold;
+  font-family: "Afacad Flux", sans-serif;
+}
+
+.slide .image2{
+  position: absolute;
+  right: -900px;
+  bottom: 50px;
+  bottom: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: none;
+
+}
+
+/* Slide2*/
+
+.slide .Slide2{
+  font-size: 50px;
+  font-family: 'Kanit', sans-serif;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  color:aliceblue;
+  position: absolute;
+  top: 300px;
+  left: 50px;
+  background-color: #000000;
+}
+
+
+
+.Slide2 h2 {
+  font-size: 35px;  /* Adjust the size as needed */
+  font-family: "Afacad Flux", sans-serif;
+
+}
+
+.Slide2 .fidtec {
+  font-size: 70px;
+  color:#2b64eb;
+  font-weight: bold;
+  font-family: "Afacad Flux", sans-serif;
+  position:absolute;
+  right: -800px;
+  top: 10px;
+}
+
+.slide .image3{
+  width: 250px;
+  height: 250px;
+  height:auto;
+  object-fit: cover;
+  position: absolute;
+  left: 590px;
+  bottom: -50px;
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+

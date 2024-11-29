@@ -1,0 +1,17 @@
+body{
+  background: rgb(160, 108, 108);
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+  color:brown
+}
+h2{
+  color:rgb(112, 113, 110);
+  opacity: 0.5
+}
+button{
+  background:rgb(112, 113, 110);
+  border-radius: 12px;
+  color:azure;
+}

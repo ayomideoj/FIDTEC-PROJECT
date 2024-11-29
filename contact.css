@@ -1,0 +1,227 @@
+body{
+  margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: visible;
+   /* background-image: url("images/home page logo2.jpg"); /* Replace with your image path */
+   /* background-size: 10; /* Makes the image cover the entire background */
+    /*background-position: center; /* Centers the image */
+    /*background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-color: black;
+  
+  } 
+/* Style the navigation bar */
+nav {
+    background-color: #000000; /* Dark background */
+    padding: 10px 0; /* Padding to make the nav bar taller */
+  }
+
+  /* Style the links inside the nav bar */
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the links */
+  }
+
+  nav ul li {
+    margin: 0 100px; /* Add some space between the links */
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: blink;
+    padding: 10px 20px;
+    font-size: 18px;
+    display: inline-block;
+    font-family: 'Kanit', sans-serif
+    ;
+    border: none;
+    padding: .8em 2.5em;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 150ms ease;
+  }
+ 
+
+  /* Add hover effects */
+  nav ul li a:hover {
+    background-color: #1c4ef1;
+    border-radius: 4px;
+    scale: 1.4;
+  }
+  /* Responsive design for smaller screens */
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column; /* Stack the links vertically on small screens */
+      align-items: center;
+    }
+
+    nav ul li {
+      margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
+  }
+  .main{
+    width:100%;
+    height: 200vh;
+    z-index: index 20;
+  }
+
+  .hero-section .background{
+    height: 200vh;
+    width: 100%;
+    object-fit:cover;
+  
+  }
+  
+  .hero-section::before{
+    content: "";
+    position: absolute;
+    height: 200vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: index 10; /*to darken the screen*/
+  }
+  
+
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border: none; /* No border for the container */
+    outline: none; /* Remove any outline that could be affecting the image */
+    margin: 20px 0; /* Add margin between images */
+    display: block; /* Ensure images are on separate lines */
+    top: 20px;
+    right: 10px;
+  }
+  
+  
+  .image1 {
+    width: 300px;
+    height: 300px;
+    height:auto;
+    object-fit: cover;
+    position:absolute;
+    top: -100px;
+    left: -50px;
+    border-radius: 100%;/* Ensure images are on separate lines */
+  }
+
+  .image2{
+    width: 600px;
+    height:400px;
+    position: absolute;
+    right:200px;
+    top:50px;
+    border-radius: 70px;
+
+  }
+
+ .hero-section .text1{
+    color:aliceblue;
+    position: absolute;
+    top: 100px;
+    left:100px;
+    font-family: 'Kanit', sans-serif;
+    font-size: 50px;
+  }
+
+  .hero-section .text2{
+    color:aliceblue;
+    position: absolute;
+    font-size: 50px;
+    top: 550px;
+    left: 700px;
+    font-family: "Afacad Flux", sans-serif;
+    font-weight:bold;
+  }
+
+  .hero-section .Us{
+    color: #2b64eb;
+  }
+
+  .contact-form-container{
+    position: absolute;
+   
+    color:azure;
+    font-size: 50px;
+    font-family: "Afacad Flux", sans-serif;
+    left: 100px;
+    width: 60%;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(250, 248, 248, 0.1);
+    border-radius: 8px;
+  }
+
+ .contact-form-container h3{
+    text-align: left;
+    color: #010101;
+   
+  }
+
+  .contact-form-container form{
+    display:flex;
+    flex-direction:column;
+  }
+ 
+  label {
+    margin: 10px 0 5px;
+    color: #010101;
+    
+} 
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="submit"],
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 50%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="text"]:hover,
+input[type="tel"]:hover,
+input[type="email"]:hover,
+textarea:hover {
+  background-color: #8fc5ff;
+  scale: 1.1; 
+}
+
+input[type="submit"] {
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  position:absolute;
+  left:600px;
+  bottom: 200px;
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  font-family: "Afacad Flux", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #439eff;
+  scale:1.2;
+}
+
+.checkbox-group {
+  margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .contact-form-container {
+      width: 100%;
+      padding: 15px;
+  }
+}
+

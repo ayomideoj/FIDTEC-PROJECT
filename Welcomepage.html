@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fidtec-Home Page</title>
+  <link rel="stylesheet" href="welcomepage.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+<!--LINK SWIPERS CSS-->
+<link rel="stylesheet" href="swiper-bundle.min.css">
+</head>
+<body>
+
+<!-- Navigation Bar Structure -->
+<nav>
+  <ul>
+    <li><a href="Welcomepage.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="services.html">SERVICES</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+  <section class = "main swiper mySwiper ">
+    <div class= "wrapper swiper-wrapper ">
+      <div class="slide swiper-slide ">
+        <img src = "images/background1.jpg" class = "img"/>
+        <img src = "images/contactlogo1.jpg" alt="" class = "image"/>
+        <div class=" Slide2">
+          <h1>Welcome To</h1>
+          <img src = "images/homepage3.jpg" alt="" class = "image3"/>
+         <h2> <span class="fidtec"> FIDTEC </span></h2>
+        </div>
+      </div>
+      
+
+      <div class="slide swiper-slide ">
+        <img src = "images/fidtecimage.jpg" class = "img"/>
+       
+        <div class=" Slide1">
+          <h1>Build Your </br> Dream Space</h1>
+         <h2>With <span class="fidtec"> Fidtec </span></h2>
+       
+         <img src = "images/homepagelogo2.jpg" alt="" class = "image2"/>
+    
+        </div>
+      </div>
+
+ 
+      <div class="slide swiper-slide ">
+        <img src = "images/contactlogo1.jpg" alt="" class = "image"/>
+        <div class=" Slide1">
+          <h1>Build Your </br> Dream Space</h1>
+         <h2>With <span class="fidtec"> Fidtec </span></h2>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+   <!-- Swiper JS -->
+   <script src="JS/swiper-bundle.min.js"></script>
+   <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Infinite Vertical Moving Image</title>
+  <style>
+    /* Basic reset for body */
+    body {
+      margin: 0;
+      height: 100vh;
+      overflow: hidden; /* Prevents scrollbars from appearing */
+    }
+
+    /* Container to hold the image */
+    .image-container {
+      position: absolute;
+      width: 200px; /* Set width for the image */
+      top: 0; /* Start above the viewport (creates the illusion of starting outside) */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Center perfectly */
+    }
+
+    /* Animation for continuous vertical movement */
+    @keyframes moveDown {
+      0% {
+        top: -100%; /* Start above the viewport */
+      }
+      100% {
+        top: 100vh; /* Move down completely out of the viewport */
+      }
+    }
+
+    /* Apply animation to the image */
+    .image-container img {
+      width: 100%; /* Keep the width within the container */
+      height: auto; /* Maintain aspect ratio */
+      animation: moveDown 10s linear infinite; /* 5s duration for one full scroll down, infinite repeat */
+    }
+  </style>
+</head>
+<body>
+
+  <div class="image-container">
+    <div style="width: 200px; height: 200px; background-color: red;"></div>
+  </div>
+
+</body>
+</html>
